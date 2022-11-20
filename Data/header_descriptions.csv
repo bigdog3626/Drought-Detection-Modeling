@@ -1,0 +1,39 @@
+Label,Element,Unit,Instrument*,Ecode,Function Interval,Ordinal,Sensor Height
+[E.I-O:H],,,,[E],[I],[0],[H]
+PREC.I-1,Precipitation Accumulation,In,Unknown Precipitation To Hundredths,PREC,Instantaneous,1,NA
+PREC.I-2,Precipitation Accumulation,In,Unknown Precipitation To Tenths,PREC,Instantaneous,2,NA
+TOBS.I-1,Air Temperature Observed,Degc,Unknown - Linear Equation,TOBS,Instantaneous,1,NA
+TMAX.D-1,Air Temperature Maximum,Degc,Micromet Hmp45c,TMAX,1 Day,1,NA
+TMAX.D-2,Air Temperature Maximum,Degc,Unknown - Linear Equation,TMAX,1 Day,2,NA
+TMIN.D-1,Air Temperature Minimum,Degc,Micromet Hmp45c,TMIN,1 Day,1,NA
+TMIN.D-2,Air Temperature Minimum,Degc,Unknown - Linear Equation,TMIN,1 Day,2,NA
+TAVG.D-1,Air Temperature Average,Degc,Micromet Hmp45c,TAVG,1 Day,1,NA
+TAVG.D-2,Air Temperature Average,Degc,Unknown - Linear Equation,TAVG,1 Day,2,NA
+PRCP.D-1,Precipitation Increment,In,Unknown Precipitation To Hundredths,PRCP,1 Day,1,NA
+SMS.I-1:-2,Soil Moisture Percent,Pct,Hydraprobe Analog (2.5 Volt) - 1 Of 4,SMS,Instantaneous,1,"-2"""
+SMS.I-1:-4,Soil Moisture Percent,Pct,Hydraprobe Analog (2.5 Volt) - 1 Of 4,SMS,Instantaneous,1,"-4"""
+SMS.I-1:-8,Soil Moisture Percent,Pct,Hydraprobe Analog (2.5 Volt) - 1 Of 4,SMS,Instantaneous,1,"-8"""
+SMS.I-1:-20,Soil Moisture Percent,Pct,Hydraprobe Analog (2.5 Volt) - 1 Of 4,SMS,Instantaneous,1,"-20"""
+SMS.I-5:-40,Soil Moisture Percent,Pct,Hydraprobe Analog (2.5 Volt) - 1 Of 4,SMS,Instantaneous,5,"-40"""
+STO.I-1:-2,Soil Temperature Observed,Degc,Hydraprobe Analog (2.5 Volt) - 1 Of 4,STO,Instantaneous,1,"-2"""
+STO.I-1:-4,Soil Temperature Observed,Degc,Hydraprobe Analog (2.5 Volt) - 1 Of 4,STO,Instantaneous,1,"-4"""
+STO.I-1:-8,Soil Temperature Observed,Degc,Hydraprobe Analog (2.5 Volt) - 1 Of 4,STO,Instantaneous,1,"-8"""
+STO.I-1:-20,Soil Temperature Observed,Degc,Hydraprobe Analog (2.5 Volt) - 1 Of 4,STO,Instantaneous,1,"-20"""
+STO.I-5:-40,Soil Temperature Observed,Degc,Hydraprobe Analog (2.5 Volt) - 1 Of 4,STO,Instantaneous,5,"-40"""
+SAL.I-1:-2,Salinity,Gram,Hydraprobe Analog (2.5 Volt) - 1 Of 4,SAL,Instantaneous,1,"-2"""
+SAL.I-1:-4,Salinity,Gram,Hydraprobe Analog (2.5 Volt) - 1 Of 4,SAL,Instantaneous,1,"-4"""
+SAL.I-1:-8,Salinity,Gram,Hydraprobe Analog (2.5 Volt) - 1 Of 4,SAL,Instantaneous,1,"-8"""
+SAL.I-1:-20,Salinity,Gram,Hydraprobe Analog (2.5 Volt) - 1 Of 4,SAL,Instantaneous,1,"-20"""
+SAL.I-5:-40,Salinity,Gram,Hydraprobe Analog (2.5 Volt) - 1 Of 4,SAL,Instantaneous,5,"-40"""
+RDC.I-1:-2,Real Dielectric Constant,Unit,Hydraprobe Analog (2.5 Volt) - 1 Of 4,RDC,Instantaneous,1,"-2"""
+RDC.I-1:-4,Real Dielectric Constant,Unit,Hydraprobe Analog (2.5 Volt) - 1 Of 4,RDC,Instantaneous,1,"-4"""
+RDC.I-1:-8,Real Dielectric Constant,Unit,Hydraprobe Analog (2.5 Volt) - 1 Of 4,RDC,Instantaneous,1,"-8"""
+RDC.I-1:-20,Real Dielectric Constant,Unit,Hydraprobe Analog (2.5 Volt) - 1 Of 4,RDC,Instantaneous,1,"-20"""
+RDC.I-5:-40,Real Dielectric Constant,Unit,Hydraprobe Analog (2.5 Volt) - 1 Of 4,RDC,Instantaneous,5,"-40"""
+BATT.I-1,Battery,Volt,Battery System,BATT,Instantaneous,1,NA
+BATT.I-2,Battery,Volt,Unknown - Linear Equation,BATT,Instantaneous,2,NA
+WDIRV.D-1,Wind Direction Average,Degr,Unknown - Linear Equation,WDIRV,1 Day,1,NA
+WSPDV.D-1,Wind Speed Average,Mph,Unknown - Linear Equation,WSPDV,1 Day,1,NA
+RHUM.I-1,Relative Humidity,Pct,Micromet Hmp45c,RHUM,Instantaneous,1,NA
+PRES.I-1,Barometric Pressure,Inch,Unknown - Linear Equation,PRES,Instantaneous,1,NA
+RHENC.D-1,Relative Humidity Enclosure,Pct,Unknown - Linear Equation,RHENC,1 Day,1,NA
