@@ -4,7 +4,24 @@ import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
 from statsmodels.distributions.empirical_distribution import ECDF
+from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 
+
+def mean_absolute_percentage_error(y_true, y_pred):
+    """Calculates MAPE given y_true and y_pred"""
+    y_true, y_pred = np.array(y_true), np.array(y_pred)
+    return np.mean(np.abs((y_true - y_pred) / y_true)) * 100
+
+
+
+def collect_error_metrics(data, true_col, pred_col):
+
+    RMSE = mean_squared_error(y_true=data[true_col],y_pred=data[pred_col])
+    MAE = mean_absolute_error(y_true=data[true_col], y_pred=data[pred_col])
+    MAPE = mean_absolute_percentage_error(y_true=data[true_col], y_pred=data[pred_col])
+
+
+    return RMSE, MAE, MAPE
 
 def mm_to_inches(dFrame, col):
     dFrame[col] = dFrame[col] / 25.4
@@ -101,3 +118,8 @@ def get_spi_from_precip_col(dFrame, percip_col):
     dFrame = get_spi(dFrame, percip_col, pdf)
 
     return dFrame, fig, ax
+
+
+def get_model_acc_via_r2(y_test, y_pred_test):
+    score = r2_score(y_test, y_pred_test)
+    return round(score, 2) * 100
