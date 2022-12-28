@@ -61,7 +61,7 @@ def spi_percip_graphs(dFrame, percip_col, x, pdf):
     ax[1, 0].set_ylabel("Cummulative Proportion")
     ax[1, 0].set_xlabel("PRCP")
 
-    new_x = np.linspace(-3, 3, 2463)
+    new_x = np.linspace(-3, 3, len(dFrame))
     cdf = stats.norm.cdf(
         new_x, pdf
     )
@@ -94,7 +94,7 @@ def find_nearest_spi(spi_cdf, v):
 def get_spi(df, percip_col, pdf):
     data = df[percip_col].unique()
     ecdf = ECDF(data)
-    new_x = np.linspace(-3, 3, 2463)
+    new_x = np.linspace(-3, 3, len(df))
     cdf = stats.norm.cdf(
         new_x, pdf
     )
@@ -112,8 +112,8 @@ def get_spi_from_precip_col(dFrame, percip_col):
     dFrame = mm_to_inches(dFrame, percip_col)
     data = dFrame[percip_col].sort_values().values
     shape, loc, scale = fit_gamma(data)
-    x = np.linspace(0, 10, 2463)
-    pdf = stats.gamma.pdf(x, 2, loc, 1)
+    x = np.linspace(0, 10, len(dFrame))
+    pdf = stats.gamma.pdf(x, 3, loc, .5)
     fig, ax = spi_percip_graphs(dFrame, percip_col, x, pdf)
     dFrame = get_spi(dFrame, percip_col, pdf)
 
